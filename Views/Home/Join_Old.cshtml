@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Join";
+}
+
+<h1>Join LifeLogger</h1>
+<form action= method="post" id="joinForm" onsubmit="event.preventDefault(); batchValidate(this);">
+    <label for="name"> Your Name: </label><br>
+    <input type="text" id="num1" name="nameIn"><br>
+    <label for="age"> Your Age: </label><br>
+    <input type="text" id="num2" name="ageIn"><br>
+    <br>
+    <label for="care">Level of Care:</label>
+    <select name="" id="careLevel">
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="plat">Platinum</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" id="b_add" value="Join LifeLogger">
+</form>
